@@ -1,0 +1,35 @@
+{
+  "name": "mcp-server",
+  "version": "1.0.0",
+  "description": "MCP Tool Server for AI DevOps Investigator",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.22.4",
+    "axios": "^1.6.0",
+    "@aws-sdk/client-cloudwatch-logs": "^3.0.0",
+    "pg": "^8.11.3",
+    "mysql2": "^3.6.5",
+    "mongodb": "^6.3.0",
+    "@aws-sdk/client-dynamodb": "^3.0.0",
+    "ioredis": "^5.3.2",
+    "octokit": "^3.1.2",
+    "winston": "^3.11.0",
+    "dotenv": "^16.4.0",
+    "@aws-sdk/client-ec2": "^3.0.0",
+    "@aws-sdk/client-ecs": "^3.0.0",
+    "@aws-sdk/client-rds": "^3.0.0",
+    "@aws-sdk/client-elastic-load-balancing-v2": "^3.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "tsx": "^4.7.0",
+    "@types/node": "^20.11.0",
+    "@types/pg": "^8.10.9"
+  }
+}

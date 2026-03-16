@@ -1,0 +1,14 @@
+{
+  "name": "ai-devops-investigator",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": ["frontend", "agent", "mcp-server"],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=frontend\" \"npm run dev --workspace=agent\" \"npm run dev --workspace=mcp-server\"",
+    "build": "npm run build --workspaces",
+    "lint": "npm run lint --workspaces"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

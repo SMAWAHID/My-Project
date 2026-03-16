@@ -1,0 +1,43 @@
+# Auto-detect text files and normalize line endings to LF on commit
+* text=auto eol=lf
+
+# Explicitly declare text files
+*.ts        text eol=lf
+*.tsx       text eol=lf
+*.js        text eol=lf
+*.jsx       text eol=lf
+*.json      text eol=lf
+*.md        text eol=lf
+*.css       text eol=lf
+*.html      text eol=lf
+*.yml       text eol=lf
+*.yaml      text eol=lf
+*.env       text eol=lf
+*.sh        text eol=lf
+*.sql       text eol=lf
+
+# Binary files - no diffs, no line ending conversion
+*.png       binary
+*.jpg       binary
+*.jpeg      binary
+*.gif       binary
+*.ico       binary
+*.svg       binary
+*.woff      binary
+*.woff2     binary
+*.ttf       binary
+*.eot       binary
+*.otf       binary
+*.zip       binary
+*.gz        binary
+
+# Diff improvements
+*.ts        diff=typescript
+*.tsx       diff=typescript
+*.json      diff=json
+*.md        diff=markdown
+
+# Exclude from exports (e.g. when someone downloads a zip of the repo)
+.gitignore          export-ignore
+.gitattributes      export-ignore
+.github/            export-ignore
